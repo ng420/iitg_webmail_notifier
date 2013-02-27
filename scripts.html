@@ -1,0 +1,44 @@
+<html>
+<head><title i18n-content="scripts">Scripts</title>
+<style type="text/css">
+.header {
+  background: #ebeff9;
+  border-top: 1px solid #b5c7de;
+  font-weight:bold;
+  font-size:120%;
+  padding:5px;
+}
+button{
+  padding: 3px;
+  width:80px;
+}
+</style>
+<script type="text/javascript" src="lib/common.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/aes.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body style="font-family:sans-serif;font-size:80%">
+<div class="header" i18n-content="scripts">Scripts</div>
+<input type="file" id="fileEm" style="position:absolute;top:-3em;visibility:hidden">
+<table style="width:100%;font-size:100%;padding-top:5px;">
+<colgroup>
+  <col width="100%"/>
+  <col/>
+</colgroup>
+<tr>
+<td>
+  <select id="list" style="width:100%;" size="12"></select>
+  </td>
+  <td style="vertical-align:top">
+    <button id="btn-add" i18n-content="add">Add</button><br/>
+    <button id="btn-delete" i18n-content="delete">Delete</button>
+  </td>
+</tr>
+<tr><td><a href="http://xnotifier.tobwithu.com/scripts.php" target="_blank" i18n-content="getScripts">Get scripts</a></td><td>
+  <button id="btn-ok" i18n-content="ok">OK</button><br/>
+</td></tr>
+</table>
+<script type="text/javascript" src="lib/i18n.js"></script>
+</body>
+</html>

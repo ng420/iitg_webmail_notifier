@@ -1,0 +1,35 @@
+<html>
+<head><title i18n-content="export">Export</title>
+<style type="text/css">
+.header {
+  background: #ebeff9;
+  border-top: 1px solid #b5c7de;
+  font-weight:bold;
+  font-size:120%;
+  padding:5px;
+}
+button{
+  padding: 3px;
+  width:80px;
+}
+</style>
+<script type="text/javascript" src="lib/common.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/export.js"></script>
+</head>
+<body style="font-family:sans-serif;font-size:80%">
+<div class="header" i18n-content="export">Export</div>
+<div style="margin:60px 20px 30px">
+<div i18n-content="exportPasswd" style="margin-bottom:20px">Enter password for exported file</div>
+<table style="width:100%;font-size:100%;" cellspacing="0" cellpadding="0">
+<tr><td><span i18n-content="enterPasswd"></span></td><td><input id="pwd" type="password" size="20"/></td></tr>
+<tr><td><span i18n-content="reenterPasswd"></span></td><td><input id="pwd2" type="password" size="20"/></td></tr>
+</table>
+</div>
+<div style="text-align:center;">
+  <button id="btn-ok" i18n-content="ok" disabled="true">OK</button>
+  <button id="btn-cancel" i18n-content="cancel">Cancel</button>
+</div>
+<script type="text/javascript" src="lib/i18n.js"></script>
+</body>
+</html>

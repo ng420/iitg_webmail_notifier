@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+  <title i18n-content="app_name"></title>
+  <script type="text/javascript" src="lib/common.js"></script>
+  <script type="text/javascript" src="js/auth.js"></script>
+<style type="text/css">
+  button{
+  padding: 3px;
+  width:80px;
+}
+</style>
+</head>
+<body style="background-color:#999;">
+<div style="margin:120px auto 0;background-color:white;
+      width:320px;padding:20px;">
+<div i18n-content="loginAuth" style="font-weight:bold;font-size:180%;margin-bottom:20px;">Login verification</div>
+<div id="host" i18n-content="host">Host</div>
+<div id="username" i18n-content="username">Username</div>
+<div style="text-align:center;margin-top:15px;"><img id="img"/></div>
+<span id="lb1" i18n-content="captchaText">Text you see above</span>
+<span id="lb2" i18n-content="verificationCode" style="display:none">Verification code</span>
+<input id="val" type="text" size="25"/>
+<div style="text-align:right;">
+<button id="btn-ok" i18n-content="ok">OK</button></div>
+</div>
+
+<script type="text/javascript" src="lib/i18n.js"></script>
+</body>
+</html>

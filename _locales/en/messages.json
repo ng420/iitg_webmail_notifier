@@ -1,0 +1,161 @@
+{
+   "add": {
+      "message": "Add"
+   },
+   "alias": {
+      "message": "Alias"
+   },
+   "aol": {
+      "message": "AOL"
+   },
+   "app_description": {
+      "message": "Notifier IITG Webmail"
+   },
+   "app_name": {
+      "message": "IITG Webmail Notifier"
+   },
+   "autoHideNotification": {
+      "message": "Auto hide notification"
+   },
+   "autoOpen": {
+      "message": "Open automatically"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "captchaText": {
+      "message": "Text you see above"
+   },
+   "checkInterval0": {
+      "message": "Check interval"
+   },
+   "checkInterval1": {
+      "message": "minutes"
+   },
+   "checkNow": {
+      "message": "Check Now"
+   },
+   "choose": {
+      "message": "Choose"
+   },
+   "daum": {
+      "message": "Daum"
+   },
+   "default": {
+      "message": "Default"
+   },
+   "defaultCheckInterval0": {
+      "message": "Default check interval"
+   },
+   "defaultCheckInterval1": {
+      "message": "minutes"
+   },
+   "delete": {
+      "message": "Delete"
+   },
+   "enterPasswd": {
+      "message": "Enter password :"
+   },
+   "export": {
+      "message": "Export"
+   },
+   "exportPasswd": {
+      "message": "Enter password for exported file"
+   },
+   "getScripts": {
+      "message": "Get scripts"
+   },
+   "gmail": {
+      "message": "Gmail"
+   },
+   "help": {
+      "message": "Help"
+   },
+   "host": {
+      "message": "Host"
+   },
+   "hotmail": {
+      "message": "Hotmail"
+   },
+   "import": {
+      "message": "Import"
+   },
+   "importWrongPassword": {
+      "message": "Password does not match"
+   },
+   "inboxOnly": {
+      "message": "Notify inbox only"
+   },
+   "includeSpam": {
+      "message": "Include spam"
+   },
+   "lastCheck": {
+      "message": "Last check"
+   },
+   "locale": {
+      "message": "Locale"
+   },
+   "loginAuth": {
+      "message": "Login verification"
+   },
+   "nate": {
+      "message": "Nate"
+   },
+   "naver": {
+      "message": "Naver"
+   },
+   "newMessagesArrive": {
+      "message": "When new messages arrive"
+   },
+   "noNewMsg": {
+      "message": "No new message"
+   },
+   "ok": {
+      "message": "OK"
+   },
+   "open": {
+      "message": "Open"
+   },
+   "options": {
+      "message": "Options"
+   },
+   "password": {
+      "message": "Password"
+   },
+   "playSound": {
+      "message": "Play a sound"
+   },
+   "reenterPasswd": {
+      "message": "Re-enter password :"
+   },
+   "resetCounter": {
+      "message": "Reset counter when opening messages"
+   },
+   "save": {
+      "message": "Save"
+   },
+   "scripts": {
+      "message": "Scripts"
+   },
+   "server": {
+      "message": "Server"
+   },
+   "shopHelper": {
+      "message": "Use similar product search (Superfish)"
+   },
+   "showNotification": {
+      "message": "Show notification"
+   },
+   "soundURL": {
+      "message": "Sound URL"
+   },
+   "username": {
+      "message": "Username"
+   },
+   "verificationCode": {
+      "message": "Verification code"
+   },
+   "yahoo": {
+      "message": "Yahoo"
+   }
+}

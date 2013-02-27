@@ -1,0 +1,32 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "icon_no_msg.png",
+      "default_popup": "popup.html",
+      "default_title": "IITG Webmail Notifier"
+   },
+   "content_scripts": [ {
+      "js": [ "js/inject.js" ],
+      "matches": [ "http://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "Notifier for IITG Webmail",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzQga1t0CwfzWW94M49bMYXgO+3rgsI0LyMH2WBhpX3FO6ZT3JyIhxxqEnX/5SB64GioHpn2YTbNj3ivep5Cwf7jXaQw+o49gofN7R/Ff9meYgsZVTwhEOF/BgFPoHcnBm8HsHYW/m5qsFOrz12hoGF52bUCgTnWfUndgwYwvvDwIDAQAB",
+   "manifest_version": 2,
+   "name": "IITG Webmail Notifier",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "notifications", "cookies", "chrome://favicon/", "http://*/", "https://*/", "contextMenus" ],
+   "sandbox": {
+      "pages": [ "js/sandbox/index.html", "js/_del/index.html" ]
+   },
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

@@ -1,0 +1,161 @@
+{
+   "add": {
+      "message": "\uCD94\uAC00"
+   },
+   "alias": {
+      "message": "\uBCC4\uBA85"
+   },
+   "aol": {
+      "message": "AOL"
+   },
+   "app_description": {
+      "message": "Notifier for Gmail, Hotmail, Yahoo, AOL and so on"
+   },
+   "app_name": {
+      "message": "X-notifier"
+   },
+   "autoHideNotification": {
+      "message": "\uC54C\uB9BC\uCC3D \uC790\uB3D9\uC73C\uB85C \uC228\uAE30\uAE30"
+   },
+   "autoOpen": {
+      "message": "\uC790\uB3D9\uC73C\uB85C \uC5F4\uAE30"
+   },
+   "cancel": {
+      "message": "\uCDE8\uC18C"
+   },
+   "captchaText": {
+      "message": "\uC704\uC5D0 \uBCF4\uC774\uB294 \uAE00\uC790"
+   },
+   "checkInterval0": {
+      "message": "\uD655\uC778 \uAC04\uACA9"
+   },
+   "checkInterval1": {
+      "message": "\uBD84"
+   },
+   "checkNow": {
+      "message": "\uC9C0\uAE08 \uD655\uC778"
+   },
+   "choose": {
+      "message": "\uC120\uD0DD"
+   },
+   "daum": {
+      "message": "\uB2E4\uC74C"
+   },
+   "default": {
+      "message": "\uAE30\uBCF8\uAC12"
+   },
+   "defaultCheckInterval0": {
+      "message": "\uAE30\uBCF8 \uD655\uC778 \uAC04\uACA9"
+   },
+   "defaultCheckInterval1": {
+      "message": "\uBD84"
+   },
+   "delete": {
+      "message": "\uC0AD\uC81C"
+   },
+   "enterPasswd": {
+      "message": "\uBE44\uBC00\uBC88\uD638 \uC785\uB825 :"
+   },
+   "export": {
+      "message": "\uB0B4\uBCF4\uB0B4\uAE30"
+   },
+   "exportPasswd": {
+      "message": "\uB0B4\uBCF4\uB0B4\uAE30 \uD30C\uC77C\uC758 \uBE44\uBC00\uBC88\uD638\uB97C \uC785\uB825\uD558\uC138\uC694"
+   },
+   "getScripts": {
+      "message": "\uC2A4\uD06C\uB9BD\uD2B8 \uBC1B\uAE30"
+   },
+   "gmail": {
+      "message": "\uC9C0\uBA54\uC77C"
+   },
+   "help": {
+      "message": "\uB3C4\uC6C0\uB9D0"
+   },
+   "host": {
+      "message": "\uD638\uC2A4\uD2B8"
+   },
+   "hotmail": {
+      "message": "\uD56B\uBA54\uC77C"
+   },
+   "import": {
+      "message": "\uB4E4\uC5EC\uC624\uAE30"
+   },
+   "importWrongPassword": {
+      "message": "\uBE44\uBC00\uBC88\uD638\uAC00 \uB9DE\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4"
+   },
+   "inboxOnly": {
+      "message": "\uBC1B\uC740 \uD3B8\uC9C0\uD568\uB9CC \uC54C\uB9BC"
+   },
+   "includeSpam": {
+      "message": "\uC2A4\uD338 \uD3EC\uD568"
+   },
+   "lastCheck": {
+      "message": "\uB9C8\uC9C0\uB9C9 \uD655\uC778"
+   },
+   "locale": {
+      "message": "\uB85C\uCF00\uC77C"
+   },
+   "loginAuth": {
+      "message": "\uB85C\uADF8\uC778 \uD655\uC778"
+   },
+   "nate": {
+      "message": "\uB124\uC774\uD2B8"
+   },
+   "naver": {
+      "message": "\uB124\uC774\uBC84"
+   },
+   "newMessagesArrive": {
+      "message": "\uC0C8 \uBA54\uC2DC\uC9C0\uAC00 \uB3C4\uCC29\uD588\uC744 \uB54C"
+   },
+   "noNewMsg": {
+      "message": "\uC0C8 \uBA54\uC2DC\uC9C0 \uC5C6\uC74C"
+   },
+   "ok": {
+      "message": "\uD655\uC778"
+   },
+   "open": {
+      "message": "\uC5F4\uAE30"
+   },
+   "options": {
+      "message": "\uC124\uC815"
+   },
+   "password": {
+      "message": "\uBE44\uBC00\uBC88\uD638"
+   },
+   "playSound": {
+      "message": "\uC18C\uB9AC \uC7AC\uC0DD"
+   },
+   "reenterPasswd": {
+      "message": "\uBE44\uBC00\uBC88\uD638 \uC7AC\uC785\uB825 :"
+   },
+   "resetCounter": {
+      "message": "\uBA54\uC2DC\uC9C0 \uC5F4 \uB54C \uCE74\uC6B4\uD130 \uCD08\uAE30\uD654"
+   },
+   "save": {
+      "message": "\uC800\uC7A5"
+   },
+   "scripts": {
+      "message": "\uC2A4\uD06C\uB9BD\uD2B8"
+   },
+   "server": {
+      "message": "\uC11C\uBC84"
+   },
+   "shopHelper": {
+      "message": "\uBE44\uC2B7\uD55C \uC0C1\uD488 \uAC80\uC0C9 \uC0AC\uC6A9 (Superfish)"
+   },
+   "showNotification": {
+      "message": "\uC54C\uB9BC\uCC3D\uC744 \uBCF4\uC784"
+   },
+   "soundURL": {
+      "message": "\uC0AC\uC6B4\uB4DC URL"
+   },
+   "username": {
+      "message": "\uC544\uC774\uB514"
+   },
+   "verificationCode": {
+      "message": "\uC778\uC99D \uCF54\uB4DC"
+   },
+   "yahoo": {
+      "message": "\uC57C\uD6C4"
+   }
+}

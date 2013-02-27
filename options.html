@@ -1,0 +1,194 @@
+﻿<html>
+<head><title i18n-content="IITG Webmail Notifier">IITG Webmail Notifier</title>
+<link rel="stylesheet" type="text/css"  href="style.css"/>
+<style type="text/css">
+#header #icon{
+  width:64px;
+  vertical-align:middle;
+  padding:0 10px 3px 3px;
+}
+#header h1
+{
+  display:inline;
+  font-size: 156%;
+  font-weight: bold;
+}
+
+#main{
+	width:750px;
+	margin: 0px auto;
+}
+.groupbox{
+  border: 1px solid #c7cfe6;
+  margin:3px;
+  padding:3px;
+}
+.hbox {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: stretch;
+}
+.flex1 {
+  -webkit-box-flex: 1;
+}
+
+#accounts th{
+  text-align:left;
+  font-weight:normal;
+  background-color:#ebeff9;
+}
+#accounts thead{
+  background-color:#b5c7de;
+}
+.tbSel{
+  background-color:Highlight;
+  color:HighlightText;
+}
+.disabled{
+  color:GrayText;
+}
+button{
+  padding: 3px;
+  width:80px;
+}
+.abs{
+  position:absolute;width:100%;height:100%;top:0px;left:0px;
+}
+.hdiv{
+  overflow:hidden;
+}
+
+pre {
+	font-family: sans-serif;
+  margin:0px;
+}
+</style>
+<script type="text/javascript" src="lib/common.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+<script type="text/javascript" src="js/aes.js"></script>
+<script type="text/javascript" src="js/def_pref.js"></script>
+<script type="text/javascript" src="js/options.js"></script>
+</head>
+<body>
+<input type="file" id="importFile" style="position:absolute;top:-3em;visibility:hidden">
+<input type="file" id="soundFile" style="position:absolute;top:-3em;visibility:hidden" accept="audio/*">
+<div id="popup" class="abs" style="display:none";>
+<div class="abs" style="background-color:#000;opacity:0.8;z-index:1">
+</div>
+  <div style="z-index:100;position:relative;margin:120px auto 0;background-color:white;
+      width:350px;height:300px;">
+  <iframe id="popup_frame" style="width:100%;height:100%;border:none;"></iframe>
+  </div>
+</div>
+<div id="main">
+<div id="header">
+<a href="https://webmail.iitg.ernet.in/" target="_blank" style="text-decoration:none;color:black;">
+<img src="icon_128.png" id="icon"><h1>IITG Webmail Notifier</h1></div></a>
+<div id="content">
+  <div class="hbox">
+    <div class="groupbox flex1" style="line-height:170%">
+      <select id="hosts" style="display:inline;width:65%;font-size:100%"></select>
+      <button id="btn-scripts" i18n-content="scripts">Scripts</button><br/>
+      <table style="visibility:hidden;" style="height:1px" style="width:1px" style="font-size:100%">
+      <tr style="visibility:hidden;" style="height:1px" style="width:1px">
+        <td i18n-content="username"></td>
+        <td><input id="username" class="hbox flex1" type="text"  value="default" size="25"/></td>
+      </tr>
+      <tr style="visibility:hidden;" style="height:1px" style="width:1px">
+        <td i18n-content="password"></td>
+        <td><input id="password" class="hbox flex1" type="password" value="abc" size="25"/></td>
+      </tr>
+      <tr style="visibility:hidden;" style="height:1px" style="width:1px" id="server-box">
+        <td style="visibility:hidden;" id="lb-server" i18n-content="server">Server</td>
+        <td style="visibility:hidden;"><input id="server" class="hbox flex1" type="text" value="https://webmail.iitg.ernet.in/" size="25"/></td>
+      </tr>
+      <tr style="height:1px" style="width:1px style="visibility:hidden;">
+        <td colspan="2" style="height:1px"></td>
+      </tr>
+      <tr  style="visibility:hidden;" style="height:1px" style="width:1px">
+        <td i18n-content="alias"></td>
+        <td><input id="alias" class="hbox flex1" type="text" size="25"/></td>
+      </tr>
+      </table>
+      <input id="inbox-only" type="checkbox"/><span i18n-content="inboxOnly">Notify inbox only</span><br/>
+      <input id="include-spam" type="checkbox"/><span i18n-content="includeSpam">Include spam</span><br/>
+      <input id="auto-open" type="checkbox"/><span i18n-content="autoOpen">Open automatically</span><br/>
+      <div>
+        <span i18n-content="checkInterval0">Default check interval</span>
+        <input id="interval" type="number" min="-1" style="text-align:right;width:5em;"/>
+        <span i18n-content="checkInterval1">minutes</span>
+      </div>
+      <div style="text-align:center;padding-top:10px">
+        <button id="btn-add" i18n-content="add">Add</button>
+        <button id="btn-delete" i18n-content="delete">Delete</button>
+      </div>
+    </div>
+    <div class="groupbox">
+      <div style="padding:100px 2px 0;float:right;">
+        <button id="btn-up" style="width:2em;">▲</button><br/>
+        <button id="btn-down" style="width:2em;">▼</button>
+      </div>
+      <table id="accounts" cellpadding="3" cellspacing="1" style="font-size:100%;" tabindex="0">
+        <thead>
+          <tr style="display:block;">
+            <th style="width:25px">&nbsp;</th>
+            <th style="width:105px" i18n-content="host">Host</th>
+            <th style="width:200px" i18n-content="username">Username</th>
+            <th i18n-content="default">Default</th>
+          </tr>
+        </thead>
+        <tbody style="height:286px;display: block;overflow: auto;width: 100%" >
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <table style="width:100%" cellspacing="0" cellpadding="0">
+  <tr><td>
+  <div style="visibility:hidden;" class="groupbox">
+    <input id="resetCounter" type="checkbox"/><span i18n-content="resetCounter">Reset counter when opening messages</span>
+  </div>
+  </td>
+  <td rowspan="4">
+  <div class="groupbox">
+    <div i18n-content="newMessagesArrive">When new messages arrive</div>
+    <div style="margin-left:3ex;margin-top:0.5em;line-height:150%">
+      <input id="showNotification" type="checkbox"/><span i18n-content="showNotification">Show notification</span><br/>
+      <div style="margin-left:3ex;line-height:150%">
+        <input id="autoHideNotification" type="checkbox"/><span id="autoHide" i18n-content="autoHideNotification">Auto hide notification</span><br/>
+      </div>
+      <input id="alertSound" type="checkbox"/><span i18n-content="playSound">Play a sound</span>
+      <div style="margin-left:3ex;line-height:150%">
+        <span id="soundURL" i18n-content="soundURL">Sound URL</span> <input id="soundUrl" type="text" i18n-placeholder="default" placeholder="Default" size="20"/><button id="btn-choose" i18n-content="choose">Choose</button>
+      </div>
+    </div>
+  </div>
+  </td>
+  </tr>
+  <tr><td>
+  <div style="visibility:hidden;" class="groupbox">
+    <span i18n-content="defaultCheckInterval0">Default check interval</span>
+    <input id="updateInterval" type="number" min="0" style="text-align:right;width:5em;"/>
+    <span i18n-content="defaultCheckInterval1">minutes</span>
+  </div>
+  </td></tr>
+  <tr><td>
+    <div style="text-align:center;padding-top:0px">
+      <button id="btn-import" style="visibility:hidden;" i18n-content="import">Import</button>
+      <button id="btn-export" style="visibility:hidden;" i18n-content="export">Export</button>
+    </div>
+  </td></tr>
+  <tr><td>
+    <!--<div class="groupbox">
+      <input id="shop-helper" type="checkbox"/><span i18n-content="shopHelper">Use similar product search (Superfish)</span>
+    </div>-->
+  </td></tr>
+  </table>
+</div>
+<div style="text-align:center">
+  <button id="btn-save" i18n-content="save">Save</button>
+</div>
+<script type="text/javascript" src="lib/i18n.js"></script>
+</div>
+</body>
+</html>
