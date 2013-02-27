@@ -6,7 +6,7 @@ Please message your Suggestions/Feedbacks to any developer on the sidebar or mai
 
 DESCRIPTION
  
-IITG Webmail notifier checks your webmail account and notifies the number of unread emails.You need to be looged in webmail(It does not matter if you close the webmail tab) It checks for mail after each interval set in options.It can hold connection to webmail as long as the browser remains open.
+IITG Webmail notifier checks your webmail account and notifies the number of unread emails.You need to do log in manually(in webmail)(It does not matter if you close the webmail tab) It checks for mail after each interval set in options.It can hold connection to webmail as long as the browser remains open.
 
 Features:
 
